@@ -6,7 +6,7 @@
 - MyBatis（[查看官方中文文档](http://www.mybatis.org/mybatis-3/zh/index.html)）
 - Hutool（[查看官方中文文档](https://hutool.cn/)）
 - Lombok（[查看官方文档](https://projectlombok.org/features/all))
-- FerrMarker （[查看官方文档](https://freemarker.apache.org/))
+- FreeMarker （[查看官方文档](https://freemarker.apache.org/))
 - Spring Mail （[查看官方文档](https://docs.spring.io/spring-framework/docs/current/reference/html/integration.html#mail))
 - Mysql
 - 其他略
