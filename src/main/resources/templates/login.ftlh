@@ -1,26 +1,29 @@
-<#include "head.ftlh" >
+<!DOCTYPE html>
+<html>
+<head>
+    <#include "head.ftlh" />
+</head>
 <body>
-
 <div class="ui middle aligned center aligned grid">
     <div class="column">
         <h2 class="ui teal image header">
-            <img src="http://www.lezijie.com/public/new/new/logo.png" class="image">
+            <img src="assets/images/logo.png" class="image">
             <div class="content">
                 Log-in to your account
             </div>
         </h2>
-        <form class="ui large form" onsubmit="return false;">
+        <form class="ui large form">
             <div class="ui stacked segment">
                 <div class="field">
                     <div class="ui left icon input">
                         <i class="user icon"></i>
-                        <input type="text" id="email" name="email" placeholder="E-mail address">
+                        <input type="text" name="email" placeholder="E-mail address">
                     </div>
                 </div>
                 <div class="field">
                     <div class="ui left icon input">
                         <i class="lock icon"></i>
-                        <input type="password" id="password" name="password" placeholder="Password">
+                        <input type="password" name="password" placeholder="Password">
                     </div>
                 </div>
                 <div class="ui fluid large teal submit button" id="login">Login</div>
