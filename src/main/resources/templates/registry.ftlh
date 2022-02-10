@@ -1,4 +1,4 @@
-<#include "head1.ftlh">
+<#include "head.ftlh">
 <body>
 
 <div class="ui middle aligned center aligned grid">
