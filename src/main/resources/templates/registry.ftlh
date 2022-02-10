@@ -1,12 +1,16 @@
-<#include "head.ftlh">
+<!DOCTYPE html>
+<html>
+<head>
+    <#include "head.ftlh" />
+</head>
 <body>
 
 <div class="ui middle aligned center aligned grid">
     <div class="column">
         <h2 class="ui teal image header">
-            <img src="http://www.lezijie.com/public/new/new/logo.png" class="image">
+            <img src="assets/images/logo.png" class="image">
             <div class="content">
-                Registry to your account
+                Log-in to your account
             </div>
         </h2>
         <form class="ui large form" onsubmit="return false;">
@@ -37,10 +41,32 @@
         </form>
 
         <div class="ui message">
-            Already signed up <a href="/login">Login</a>
+            New to us? <a href="/login">Login</a>
         </div>
     </div>
 </div>
+<script type="text/javascript" charset="UTF-8">
+    $("#registry").on("click", function () {
+        $.ajax({
+            url: "user/login",
+            type: "POST",
+            data: {
+                email: $("#email").val(),
+                password: $("#password").val()
+            },
+            resultType: "JSON",
+            success: function (result) {
+                alert(result.message);
+                if (result.code == 200) {
+                    window.location.href = "/";
+                }
+            },
+            error: function (result) {
+                result.message;
+            }
+        });
+    });
+</script>
 <script type="text/javascript" charset="UTF-8">
     $("#registry").on("click", function () {
         $.ajax({
